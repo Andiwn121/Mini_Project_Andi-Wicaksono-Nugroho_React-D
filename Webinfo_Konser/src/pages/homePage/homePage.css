@@ -1,0 +1,23 @@
+.container-home {
+    padding: 25px;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+
+.container-card{
+    width: auto;
+}
+
+.text-home {
+    text-align: center;
+    font-size: 40px;
+    font-style: italic;
+}
+
+.card-text {
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    margin-top: 50px;
+}
