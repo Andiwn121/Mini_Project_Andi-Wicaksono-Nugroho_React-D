@@ -7,5 +7,6 @@ export const client = new ApolloClient({
     headers: {
         "x-hasura-admin-secret":
         "AFvxLBHI67gWybwd2ai1KeQuQnigz9lbJzhIbBMrQPQ1ChAAmPtYRlDryzXlOsSx"
+        
     },
 });
