@@ -1,0 +1,24 @@
+.navbar {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .company {
+    font-family: "Gloock", serif;
+    font-weight: 700;
+    color: rgb(125, 125, 125);
+    float: "left";
+    width: 120px;
+    height: 25px;
+    margin: 0px;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .e {
+    color: #71c55f;
+  }
+  
+  .nav-link {
+    color: #71c55f;
+  }
+  

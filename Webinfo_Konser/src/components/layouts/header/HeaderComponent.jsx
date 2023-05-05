@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { Layout, Menu, Row } from "antd";
 import { MENU_ITEM } from "../Constants";
 import { Link } from "react-router-dom";
@@ -13,7 +13,7 @@ const HeaderComponent = () => {
   };
 
   return (
-    <>
+    <div className="navbar">
       <Header
         justify="space-between"
         style={{
@@ -21,23 +21,18 @@ const HeaderComponent = () => {
           top: 0,
           zIndex: 1,
           width: "100%",
+          background: "#ffffff",
         }}
       >
         <Row justify="space-between">
           <Link to="/">
-            <div
-              style={{
-                float: "left",
-                width: 120,
-                height: 25,
-                margin: "16px 24px 16px 0",
-                background: "rgba(255, 255, 255, 0.2)",
-              }}
-              onClick={() => setCurrent("")}
-            />
+            <h1 className="company" onClick={() => setCurrent("")}>
+              <span className="e">e</span>
+              Startup
+            </h1>
           </Link>
           <Menu
-            theme="dark"
+            theme="light"
             mode="horizontal"
             onClick={onClick}
             selectedKeys={[current]}
@@ -46,7 +41,7 @@ const HeaderComponent = () => {
           />
         </Row>
       </Header>
-    </>
+    </div>
   );
 };
 
