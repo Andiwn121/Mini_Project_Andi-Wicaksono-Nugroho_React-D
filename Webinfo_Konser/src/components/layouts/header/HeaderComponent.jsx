@@ -17,7 +17,7 @@ const HeaderComponent = () => {
       <Header
         justify="space-between"
         style={{
-          position: "sticky",
+          position: "fixed",
           top: 0,
           zIndex: 1,
           width: "100%",
