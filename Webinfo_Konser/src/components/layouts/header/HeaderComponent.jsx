@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { Layout, Menu, Row } from "antd";
+import "./header.css";
+import { Layout, Menu, Row, Space, Button } from "antd";
 import { MENU_ITEM } from "../Constants";
 import { Link } from "react-router-dom";
 
@@ -22,15 +23,40 @@ const HeaderComponent = () => {
           zIndex: 1,
           width: "100%",
           background: "#ffffff",
+          boxShadow: "0 4px 10px rgba(0, 0, 0, 0.15)",
         }}
       >
         <Row justify="space-between">
-          <Link to="/">
+          <Link to="/home">
             <h1 className="company" onClick={() => setCurrent("")}>
               <span className="e">e</span>
               Startup
             </h1>
           </Link>
+          {/* <Space direction="horizontal">
+            <Link to="/">
+              <Button
+                type="primary"
+                onClick={() => {
+                  localStorage.removeItem("token");
+                }}
+                danger
+              >
+                Logout
+              </Button>
+            </Link>
+            <Link to="/">
+              <Button
+                type="primary"
+                onClick={() => {
+                  localStorage.removeItem("token");
+                }}
+                danger
+              >
+                Logout
+              </Button>
+            </Link>
+          </Space> */}
           <Menu
             theme="light"
             mode="horizontal"

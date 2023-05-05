@@ -3,8 +3,20 @@ import { Button } from "antd";
 
 export const MENU_ITEM = [
   {
-    label: <Link to="/">Home</Link>,
-    key: "/",
+    label: <Link to="/home">Home</Link>,
+    key: "/home",
+  },
+  {
+    label: "Konser",
+    key: "2"
+  },
+  {
+    label: "Artis",
+    key: "3"
+  },
+  {
+    label: "Display User",
+    key: "4"
   },
   {
     label: (
@@ -20,6 +32,6 @@ export const MENU_ITEM = [
         </Button>
       </Link>
     ),
-    key: "2",
+    key: "5",
   },
 ]
