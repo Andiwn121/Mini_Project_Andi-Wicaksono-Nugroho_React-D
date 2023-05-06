@@ -1,9 +1,24 @@
 .container-center {
     margin: 0;
+    padding: 0px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    box-shadow: 0 7px 25px 0 rgba(0, 0, 0, 0.08);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 5px 5px 5px 5px;
+    overflow: hidden;
+    height: 350px;
+  }
+
+  .sideLogin{
+    height: 350px;
+    width: 500px;
+    margin-bottom: 0;
+  }
+
+  .btn-login{
+    background-color: #4b0082;
+    margin-top: 20px;
   }
