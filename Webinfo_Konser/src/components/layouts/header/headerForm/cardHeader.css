@@ -1,0 +1,27 @@
+.headerCardOne {
+  background-image: url("../../../../assets/img/headerkons.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: rgb(0 0 0 / 8%) 0px 7px 25px 0px;
+  margin-bottom: 25px;
+  margin-top: 0px;
+  padding: 24px 24px 20px;
+  transition: transform 500ms;
+}
+
+.headerCardTwo {
+    background-image: url("../../../../assets/img/headerart.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: rgb(0 0 0 / 8%) 0px 7px 25px 0px;
+    margin-bottom: 25px;
+    margin-top: 0px;
+    padding: 24px 24px 20px;
+    transition: transform 500ms;
+  }

@@ -24,6 +24,9 @@ import Album_Tujuh from './img/konser/konser_b.jpg';
 import Ngambyar from './img/konser/konser_c.jpeg';
 import DuaPuluhTahun from './img/konser/konser_d.jpg';
 
+import Header_Konser from './img/headerkons.jpg';
+import Header_Artis from './img/headerart.jpg';
+
 export {
   Artis,
   Data_Konser,
@@ -47,5 +50,7 @@ export {
   Ngambyar,
   Jfest,
   Album_Tujuh,
-  DuaPuluhTahun
+  DuaPuluhTahun,
+  Header_Artis,
+  Header_Konser
 };
