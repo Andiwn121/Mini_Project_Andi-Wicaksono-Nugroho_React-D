@@ -17,20 +17,24 @@ const HeaderComponent = () => {
     <div className="navbar">
       <Header
         justify="space-between"
+        disabledOverflow
         style={{
           position: "fixed",
           top: 0,
           zIndex: 1,
           width: "100%",
-          background: "#ffffff",
-          boxShadow: "0 4px 10px rgba(0, 0, 0, 0.15)",
+          background: "#4b0082",
+          boxShadow: "0 4px 10px rgba(0, 0, 0, 0.55)",
+          paddingTop:0
         }}
       >
         <Row justify="space-between">
           <Link to="/home">
             <h1 className="company" onClick={() => setCurrent("")}>
-              <span className="e">e</span>
-              Startup
+              <span className="SS">S</span>
+              onic
+              <span className="SS">S</span>
+              pectrum
             </h1>
           </Link>
           {/* <Space direction="horizontal">
@@ -64,6 +68,7 @@ const HeaderComponent = () => {
             selectedKeys={[current]}
             items={MENU_ITEM}
             disabledOverflow
+            style={{ backgroundColor:"#4b0082", color:"#fff", height:"25px"}}
           />
         </Row>
       </Header>
