@@ -3,6 +3,7 @@
     align-items: center;
     text-align: center;
     margin: auto;
+    
 }
 
 .container-card{
@@ -10,8 +11,9 @@
 }
 
 .text-home {
+    margin-top: 100px;
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
     font-style: italic;
 }
 
@@ -20,4 +22,16 @@
     font-size: x-large;
     font-weight: bold;
     margin-top: 50px;
+}
+
+.cover-card{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    height: 200px;
+}
+
+.btn-go{
+    background-color: #4b0082;
+    
 }
