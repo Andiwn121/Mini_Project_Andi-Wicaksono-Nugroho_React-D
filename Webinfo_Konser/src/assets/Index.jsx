@@ -1,6 +1,7 @@
 import Artis from "./img/data_artis.jpg";
 import Data_Konser from "./img/data_konser.png";
 import Display_User from "./img/display_user.png";
+import DisplayHeader from './img/displayheader.png';
 
 import Ardhito from "./img/artis/ardhito.jpg";
 import Coldiac from "./img/artis/coldiac.jpg";
@@ -31,6 +32,7 @@ export {
   Artis,
   Data_Konser,
   Display_User,
+  DisplayHeader,
   Ardhito,
   Coldiac,
   Denny,

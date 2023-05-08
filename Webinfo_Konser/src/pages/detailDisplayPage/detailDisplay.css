@@ -1,0 +1,78 @@
+.container-detail {
+  margin: 100px 200px;
+  width: auto;
+}
+
+.container-kons {
+  text-align: center;
+  align-items: center;
+}
+
+.detail-judul {
+  font-size: 48px;
+  font-weight: bolder;
+}
+
+.detail-desc {
+  font-weight: lighter;
+  font-size: 24px;
+  margin: 20px auto;
+}
+
+.container-lineup {
+  margin: 110px 50px;
+}
+
+.lineup-text {
+  font-size: 32px;
+  font-weight: bolder;
+  font-style: italic;
+}
+
+.container-artisLine {
+  margin: 25px auto;
+}
+
+.card-cover-circle {
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.card-cover-circle img {
+  width: 100%;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.artis-text {
+  text-align: center;
+  align-items: center;
+}
+
+.looping-artis {
+  width: auto;
+}
+
+.nama-artis {
+  font-size: large;
+  font-weight: bold;
+}
+
+.container-tiket{
+    margin: 50px auto 100px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.090);
+    border-radius: 10px;
+}
+
+.date-konser{
+    font-size: large;
+    font-weight: bold;
+    margin: 0px 20px;
+}
+
+.btn-tic{
+    background-color: #4b0082;
+    color: white;
+}
+

@@ -21,9 +21,8 @@ const LayoutComponent = ({ children }) => {
         >
           <div
             style={{
-              padding: 24,
+              padding: 0,
               minHeight: 380,
-              background: "#ffffff",
             }}
           >
             {children}

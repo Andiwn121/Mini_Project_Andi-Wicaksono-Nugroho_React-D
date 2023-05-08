@@ -53,7 +53,6 @@ const KonserPage = () => {
   const [isEdit, setIsEdit] = useState(false);
   const [avatar, setAvatar] = useState("");
 
-  //   const [tanggal, setTanggal] = useState("");
   const dateFormat = "DD MMMM YYYY";
 
   //   GraphQL
@@ -62,8 +61,6 @@ const KonserPage = () => {
     loading: isKonserLoading,
     error: isKonserError,
   } = useQuery(GET_KONSER);
-
-  // const defaultValue = dayjs(row_data.tanggal).toDate();
 
   const [addKonser, { loading: isCreateLoading }] = useMutation(ADD_KONSER, {
     refetchQueries: [GET_KONSER],
@@ -201,7 +198,7 @@ const KonserPage = () => {
           text: `${err.message}`,
         });
       },
-      onAddCompleted: () => {
+      onCompleted: () => {
         MySwal.fire({
           icon: "success",
           title: "Berhasil",
@@ -232,7 +229,7 @@ const KonserPage = () => {
           text: `${err.message}`,
         });
       },
-      onUpdateCompleted: () => {
+      onCompleted: () => {
         MySwal.fire({
           icon: "success",
           title: "Berhasil",
@@ -320,7 +317,7 @@ const KonserPage = () => {
                       message: "Nama konser harus diisi!",
                     },
                     {
-                      pattern: /^[\w\s]{1,50}$/,
+                      pattern: /^[\w\s\`\&\"\'\-\!]{1,50}$/,
                       message:
                         "Nama produk tidak boleh lebih dari 50 karakter!",
                     },
@@ -454,12 +451,6 @@ const KonserPage = () => {
               loading={isKonserLoading || isDeleteLoading}
             />
           </Card>
-
-          {konserData &&
-            konserData.konser &&
-            konserData.konser.map((item) => (
-              <span>{dayjs(item.tanggal).format("DD MMMM YYYY")}</span>
-            ))}
         </Space>
       </Row>
     </>
