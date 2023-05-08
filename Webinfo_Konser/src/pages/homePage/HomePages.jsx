@@ -41,7 +41,7 @@ const HomePages = () => {
             >
               <Space direction="vertical">
                 <span>Data Konser</span>
-                <span>{ jumlahKonser }</span>
+                <span onLoad={isKonserLoading}>{ jumlahKonser }</span>
               </Space>
             </Card>
           </Link>
@@ -56,7 +56,7 @@ const HomePages = () => {
             >
               <Space direction="vertical">
                 <span>Data Artis</span>
-                <span>{ jumlahArtis }</span>
+                <span onLoad={isArtisLoading}>{ jumlahArtis }</span>
               </Space>
             </Card>
           </Link>

@@ -8,4 +8,8 @@ const CardHeaderTwoComponent = (props) => {
   return <div className="headerCardTwo">{props.children}</div>;
 };
 
-export { CardHeaderOneComponent, CardHeaderTwoComponent};
+const CardHeaderThreeComponent = (props) => {
+  return <div className="headerDisplay">{props.children}</div>
+};
+
+export { CardHeaderOneComponent, CardHeaderTwoComponent, CardHeaderThreeComponent};
