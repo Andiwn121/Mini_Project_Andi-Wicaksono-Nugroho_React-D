@@ -11,8 +11,8 @@ export const MENU_ITEM = [
     key: "/data-konser"
   },
   {
-    label: "Artis",
-    key: "3"
+    label: <Link to="/data-artis">Artis</Link>,
+    key: "/data-artis"
   },
   {
     label: "Display User",
