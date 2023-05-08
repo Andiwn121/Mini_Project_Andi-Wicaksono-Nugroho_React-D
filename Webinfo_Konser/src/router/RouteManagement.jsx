@@ -4,6 +4,7 @@ import { Routes, Route, useNavigate } from "react-router-dom";
 import HomePages from "../pages/homePage/HomePages";
 import LoginPage from "../pages/loginPages/LoginPage";
 import LayoutComponent from "../components/layouts/LayoutComponent";
+import KonserPage from "../pages/konserPage/KonserPage";
 
 const RouteManagement = () => {
   const token = localStorage.getItem("token");
@@ -25,6 +26,7 @@ const RouteManagement = () => {
         <LayoutComponent>
           <Routes>
             <Route path="/home" element={<HomePages />} />
+            <Route path="/data-konser" element={<KonserPage />} />
           </Routes>
         </LayoutComponent>
       )}

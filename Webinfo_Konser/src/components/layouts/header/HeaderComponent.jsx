@@ -17,7 +17,6 @@ const HeaderComponent = () => {
     <div className="navbar">
       <Header
         justify="space-between"
-        disabledOverflow
         style={{
           position: "fixed",
           top: 0,
@@ -68,7 +67,7 @@ const HeaderComponent = () => {
             selectedKeys={[current]}
             items={MENU_ITEM}
             disabledOverflow
-            style={{ backgroundColor:"#4b0082", color:"#fff", height:"25px"}}
+            className="header-menu"
           />
         </Row>
       </Header>

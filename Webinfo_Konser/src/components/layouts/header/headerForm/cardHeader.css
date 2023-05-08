@@ -6,22 +6,29 @@
   background-color: #fff;
   border-radius: 20px;
   box-shadow: rgb(0 0 0 / 8%) 0px 7px 25px 0px;
-  margin-bottom: 25px;
-  margin-top: 0px;
-  padding: 24px 24px 20px;
+  margin: 100px 350px 25px 350px;
+  padding: 24px 24px;
   transition: transform 500ms;
+  color: #fff;
+  font-size: xx-large;
+  font-weight:900 !important;
+  align-items: center;
+  
 }
 
 .headerCardTwo {
-    background-image: url("../../../../assets/img/headerart.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-color: #fff;
-    border-radius: 20px;
-    box-shadow: rgb(0 0 0 / 8%) 0px 7px 25px 0px;
-    margin-bottom: 25px;
-    margin-top: 0px;
-    padding: 24px 24px 20px;
-    transition: transform 500ms;
+  background-image: url("../../../../assets/img/headerart.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: rgb(0 0 0 / 8%) 0px 7px 25px 0px;
+  margin: 100px 350px 25px 350px;
+  padding: 24px 24px 20px;
+  transition: transform 500ms;
+  color: #fff;
+  font-size: xx-large;
+  font-weight:900 !important;
+  align-items: center;
   }
