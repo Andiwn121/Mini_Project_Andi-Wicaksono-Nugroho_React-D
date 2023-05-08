@@ -5,6 +5,7 @@ import HomePages from "../pages/homePage/HomePages";
 import LoginPage from "../pages/loginPages/LoginPage";
 import LayoutComponent from "../components/layouts/LayoutComponent";
 import KonserPage from "../pages/konserPage/KonserPage";
+import ArtisPage from "../pages/artisPage/ArtisPage";
 
 const RouteManagement = () => {
   const token = localStorage.getItem("token");
@@ -27,6 +28,7 @@ const RouteManagement = () => {
           <Routes>
             <Route path="/home" element={<HomePages />} />
             <Route path="/data-konser" element={<KonserPage />} />
+            <Route path="/data-artis" element={<ArtisPage />} />
           </Routes>
         </LayoutComponent>
       )}
