@@ -7,8 +7,8 @@ export const MENU_ITEM = [
     key: "/home",
   },
   {
-    label: "Konser",
-    key: "2"
+    label: <Link to="/data-konser">Konser</Link>,
+    key: "/data-konser"
   },
   {
     label: "Artis",
