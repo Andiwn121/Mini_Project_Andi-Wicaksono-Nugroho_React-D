@@ -1,0 +1,26 @@
+.navbar {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15) !important;
+  }
+  
+  .company {
+    font-family: "Gloock", serif;
+    font-weight: 700;
+    color: #ff1493;
+    float: "left";
+    width: 120px;
+    height: 25px;
+    margin: 0px;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .SS {
+    color: #ff7f50;
+  }
+
+.header-menu{
+  background-color: #4b0082;
+  color: #fff;
+  height: 25px;
+}
+  

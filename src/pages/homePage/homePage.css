@@ -1,0 +1,37 @@
+.container-home {
+    padding: 25px;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    
+}
+
+.container-card{
+    width: auto;
+}
+
+.text-home {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 30px;
+    font-style: italic;
+}
+
+.card-text {
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.cover-card{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    height: 200px;
+}
+
+.btn-go{
+    background-color: #4b0082;
+    
+}
