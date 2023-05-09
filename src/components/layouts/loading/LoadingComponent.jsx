@@ -1,5 +1,5 @@
 import React from 'react';
-import "./LoadingComponent.css";
+import "../loading/loadingComponent.css";
 import { Spin } from "antd";
 
 const LoadingComponent = () => {
