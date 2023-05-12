@@ -2,6 +2,7 @@ import Artis from "./img/data_artis.jpg";
 import Data_Konser from "./img/data_konser.png";
 import Display_User from "./img/display_user.png";
 import DisplayHeader from './img/displayheader.png';
+import Landing from './img/landing.jpg';
 
 import Ardhito from "./img/artis/ardhito.jpg";
 import Coldiac from "./img/artis/coldiac.jpg";
@@ -54,5 +55,6 @@ export {
   Album_Tujuh,
   DuaPuluhTahun,
   Header_Artis,
-  Header_Konser
+  Header_Konser,
+  Landing
 };

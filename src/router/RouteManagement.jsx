@@ -8,23 +8,29 @@ import KonserPage from "../pages/konserPage/KonserPage";
 import ArtisPage from "../pages/artisPage/ArtisPage";
 import DisplayPage from "../pages/displayPage/DisplayPage";
 import DetailDisplayPage from "../pages/detailDisplayPage/DetailDisplayPage";
+import LandingPage from "../pages/landingPage/LandingPage";
 
 const RouteManagement = () => {
   const token = localStorage.getItem("token");
   const navigate = useNavigate();
 
   useEffect(() => {
-    if (!token) {
-      navigate("/");
+    if (token) {
+      navigate("/home");
     }
   }, [token]);
 
   return (
     <Suspense fallback={<LoadingComponent />}>
       {!token ? (
-        <Routes>
-          <Route path="/" element={<LoginPage />} />
-        </Routes>
+        <LayoutComponent>
+          <Routes>
+            <Route path="/" element={<LandingPage />} />
+            <Route path="/admin" element={<LoginPage />} />
+            <Route path="/display-user" element={<DisplayPage />} />
+            <Route path="/display-user/:uuid" element={<DetailDisplayPage />} />
+          </Routes>
+        </LayoutComponent>
       ) : (
         <LayoutComponent>
           <Routes>
