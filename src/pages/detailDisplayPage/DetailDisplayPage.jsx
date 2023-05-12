@@ -64,7 +64,7 @@ const DetailDisplayPage = () => {
             <Space direction="vertical">
               <span className="lineup-text">Lineup</span>
               <Row
-                justify="center"
+                justify="start"
                 align="middle"
                 className="looping-artis"
                 gutter={[36, 32]}

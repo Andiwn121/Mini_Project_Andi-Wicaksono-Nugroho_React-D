@@ -32,7 +32,15 @@
     height: 200px;
 }
 
+.judul-data{
+    font-size: 20px;
+}
+
+.jumlah-data{
+    font-size: 38px;
+}
+
 .btn-go{
     background-color: #4b0082;
-    
+    margin: 13.5px auto; 
 }

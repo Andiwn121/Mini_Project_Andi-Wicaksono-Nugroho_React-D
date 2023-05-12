@@ -31,11 +31,14 @@
 
 .container-artisLine {
   margin: 25px auto;
+  border: hidden;
 }
 
 .card-cover-circle {
   overflow: hidden;
   border-radius: 50%;
+  background-color: transparent;
+  border: hidden;
 }
 
 .card-cover-circle img {

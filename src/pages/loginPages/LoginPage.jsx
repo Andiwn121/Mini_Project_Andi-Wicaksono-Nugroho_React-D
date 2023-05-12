@@ -41,7 +41,8 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="container-center">
+    <div className="container-login">
+      <div className="container-center">
       <Space direction="horizontal">
         <img src={Data_Konser} alt="login image" className="sideLogin" />
 
@@ -83,6 +84,7 @@ const LoginPage = () => {
           </Form>
         </Card>
       </Space>
+    </div>
     </div>
   );
 };

@@ -93,7 +93,7 @@ const DisplayPage = () => {
             </Row>
           ) : (
             <Row justify="center" align="middle">
-              <Result status="404" subTitle="Product not found" />
+              <Result status="404" subTitle="konser tidak ditemukan" />
             </Row>
           )}
         </Space>

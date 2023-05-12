@@ -43,3 +43,8 @@
     color: white;
     margin-top: 20px;
 }
+
+.error-result{
+    display: grid;
+    justify-content: center;
+}

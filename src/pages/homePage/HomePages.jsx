@@ -40,8 +40,8 @@ const HomePages = () => {
               hoverable
             >
               <Space direction="vertical">
-                <span>Data Konser</span>
-                <span onLoad={isKonserLoading}>{ jumlahKonser }</span>
+                <span className="judul-data">Data Konser</span>
+                <span className="jumlah-data" onLoad={isKonserLoading}>{ jumlahKonser }</span>
               </Space>
             </Card>
           </Link>
@@ -55,8 +55,8 @@ const HomePages = () => {
               hoverable
             >
               <Space direction="vertical">
-                <span>Data Artis</span>
-                <span onLoad={isArtisLoading}>{ jumlahArtis }</span>
+                <span className="judul-data">Data Artis</span>
+                <span className="jumlah-data" onLoad={isArtisLoading}>{ jumlahArtis }</span>
               </Space>
             </Card>
           </Link>
@@ -69,7 +69,7 @@ const HomePages = () => {
             hoverable
           >
             <Space direction="vertical">
-              <span>Tampilan User</span>
+              <span className="judul-data">Tampilan User</span>
               <Button type="primary" className="btn-go">
                 Go to Pages
               </Button>
