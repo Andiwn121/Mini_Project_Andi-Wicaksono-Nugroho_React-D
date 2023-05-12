@@ -1,0 +1,46 @@
+.container-landing {
+  background-image: url("../../assets/img/landing.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #000;
+  height: 722px;
+  padding: 0px;
+}
+
+.container-land-text{
+    margin: 200px auto auto auto;
+    position: relative;
+    text-align: center;
+    background-color: #00000078;
+    border-radius: 10px;
+}
+
+.tagline-text{
+    color: #fff;
+    font-size: 62px;
+    font-weight: bold;
+    -webkit-text-stroke: 1.5px black;
+}
+
+.outlined-text-color{
+    color: #4b0082;
+    -webkit-text-stroke: 1px orange;
+    margin: auto 15px;
+}
+
+.landing-desc{
+    color: #bdbdbd !important;
+    font-size: 18px;
+}
+
+.btn-start{
+    font-size: large;
+    margin-top: 25px;
+    padding: 15px 30px;
+    height: auto;
+    width: auto;
+    background-color: #4b0082;
+}
+
+

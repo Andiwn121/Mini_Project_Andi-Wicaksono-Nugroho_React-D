@@ -5,6 +5,8 @@ import { MENU_ITEM } from "../Constants";
 import { Link } from "react-router-dom";
 
 const HeaderComponent = () => {
+  const token = localStorage.getItem("token");
+
   const { Header } = Layout;
   const path = window.location.pathname;
   const [current, setCurrent] = useState(path);
@@ -24,52 +26,41 @@ const HeaderComponent = () => {
           width: "100%",
           background: "#4b0082",
           boxShadow: "0 4px 10px rgba(0, 0, 0, 0.55)",
-          paddingTop:0
+          paddingTop: 0,
         }}
       >
-        <Row justify="space-between">
-          <Link to="/home">
-            <h1 className="company" onClick={() => setCurrent("")}>
-              <span className="SS">S</span>
-              onic
-              <span className="SS">S</span>
-              pectrum
-            </h1>
-          </Link>
-          {/* <Space direction="horizontal">
+        {!token ? (
+          <Row justify="center" align="middle">
             <Link to="/">
-              <Button
-                type="primary"
-                onClick={() => {
-                  localStorage.removeItem("token");
-                }}
-                danger
-              >
-                Logout
-              </Button>
+              <h1 className="company" onClick={() => setCurrent("")}>
+                <span className="SS">S</span>
+                onic
+                <span className="SS">S</span>
+                pectrum
+              </h1>
             </Link>
-            <Link to="/">
-              <Button
-                type="primary"
-                onClick={() => {
-                  localStorage.removeItem("token");
-                }}
-                danger
-              >
-                Logout
-              </Button>
+          </Row>
+        ) : (
+          <Row justify="space-between">
+            <Link to="/home">
+              <h1 className="company" onClick={() => setCurrent("")}>
+                <span className="SS">S</span>
+                onic
+                <span className="SS">S</span>
+                pectrum
+              </h1>
             </Link>
-          </Space> */}
-          <Menu
-            theme="light"
-            mode="horizontal"
-            onClick={onClick}
-            selectedKeys={[current]}
-            items={MENU_ITEM}
-            disabledOverflow
-            className="header-menu"
-          />
-        </Row>
+            <Menu
+              theme="light"
+              mode="horizontal"
+              onClick={onClick}
+              selectedKeys={[current]}
+              items={MENU_ITEM}
+              disabledOverflow
+              className="header-menu"
+            />
+          </Row>
+        )}
       </Header>
     </div>
   );
